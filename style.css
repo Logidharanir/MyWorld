@@ -595,3 +595,24 @@ img{max-width:100%;height:auto;display:block}
   color: #000;
   font-family: 'Poppins', sans-serif;
 }
+/* Certificate Group Titles */
+.cert-group-title {
+  margin: 50px 0 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #00c9ff;              /* matches modern tech theme */
+  position: relative;
+  padding-left: 15px;
+}
+
+/* Left accent line */
+.cert-group-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: 70%;
+  width: 4px;
+  background: linear-gradient(180deg, #00c9ff, #92fe9d);
+  border-radius: 2px;
+}
