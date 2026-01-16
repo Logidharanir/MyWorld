@@ -30,6 +30,7 @@
   <a href="#projects">Projects</a>   <!--  ← renamed  -->
   <a href="#skills">Skills</a>
   <a href="#contact">Contact</a>
+  <i class="bx bx-moon" id="theme-toggle"></i>
 </nav>
       </div>
     </header>
@@ -131,7 +132,7 @@ such as Artificial Intelligence and Machine Learning. </p>
     <div class="cert-card"><img src="NM_Foundation of Coding with Python.jpg"><h4>Naan Mudhalvan – Foundation of Coding with Python</h4><a href="NM_Foundation of Coding with Python.jpg" target="_blank" class="view-btn">View</a></div>
     <div class="cert-card"><img src="NM_Fundamentals of Web Development_page-0001.jpg"><h4>Naan Mudhalvan – Fundamentals of Web Development</h4><a href="NM_Fundamentals of Web Development_page-0001.jpg" target="_blank" class="view-btn">View</a></div>
     <div class="cert-card"><img src="nm system admin.png"><h4>Naan Mudhalvan – System Admin with IT Service Management & AI</h4><a href="nm system admin.png" target="_blank" class="view-btn">View</a></div>
-    <div class="cert-card"><img src="poetry slam.jpg"><h4>College – Poetry Slam</h4><a href="poetry_slam.jpg" target="_blank" class="view-btn">View</a></div>
+    <div class="cert-card"><img src="poetry slam.jpg"><h4>College – Poetry Slam</h4><a href="poetry slam.jpg" target="_blank" class="view-btn">View</a></div>
   </div>
 </section>
 
@@ -389,6 +390,17 @@ such as Artificial Intelligence and Machine Learning. </p>
     <!-- ======== Scripts ======== -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
+
+      const themeToggle = document.getElementById("theme-toggle");
+
+  themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  // icon switch
+  themeToggle.classList.toggle("bx-sun");
+  themeToggle.classList.toggle("bx-moon");
+});
+
       const menuToggle = document.getElementById('menu-toggle');
   const navbar     = document.querySelector('.navbar');
 
@@ -436,4 +448,5 @@ document.getElementById('wa-send').addEventListener('click', function () {
     </script>
   </body>
 </html>
+
 
