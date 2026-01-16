@@ -616,3 +616,41 @@ img{max-width:100%;height:auto;display:block}
   background: linear-gradient(180deg, #00c9ff, #92fe9d);
   border-radius: 2px;
 }
+
+/* ===== FORCE FULL DARK MODE ===== */
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* All sections dark */
+body.dark section {
+  background: #0f172a !important;
+  color: #e5e7eb;
+}
+
+/* Header & navbar */
+body.dark .header {
+  background: #020617 !important;
+}
+
+/* Cards (projects, certificates, skills, etc.) */
+body.dark .project-card,
+body.dark .cert-card,
+body.dark .skill-card,
+body.dark .internship-card {
+  background: #020617 !important;
+  color: #e5e7eb;
+  box-shadow: none;
+}
+
+/* Text & links */
+body.dark a,
+body.dark p,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark li {
+  color: #e5e7eb !important;
+}
