@@ -14,7 +14,15 @@ img{max-width:100%;height:auto;display:block}
 .navbar a:hover,.navbar a.active{color:#0ef}
 
 /* ==================== HOME SECTION ==================== */
-.home{padding:6rem 0 4rem;min-height:100vh;display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center}
+.home {
+  padding: 6rem 1rem 4rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .home-content{max-width:600px}
 .home-content h3{font-size:1.8rem;margin-bottom:.4rem}
 .home-content h1{font-size:3rem;margin-bottom:.4rem;color:#0ef;text-shadow:0 0 10px #0ef}
@@ -29,6 +37,27 @@ img{max-width:100%;height:auto;display:block}
 .social-links a:hover{color:#fff}
 .btn{display:inline-block;padding:.75rem 1.6rem;background:#0ef;color:#000;border-radius:2rem;font-weight:600;text-decoration:none;transition:.3s}
 .btn:hover{background:#00bcd4}
+
+/* ===== Desktop Center Fix ===== */
+.home-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.home-content {
+  max-width: 900px;   /* Increased width */
+  margin: auto;
+  text-align: center;
+}
+
+/* Better text readability on large screens */
+@media (min-width: 1200px) {
+  .home-content {
+    max-width: 1000px;
+  }
+}
+
 
 /* ==================== RESPONSIVE ==================== */
 @media(max-width:768px){
@@ -595,6 +624,7 @@ img{max-width:100%;height:auto;display:block}
   color: #000;
   font-family: 'Poppins', sans-serif;
 }
+
 /* Certificate Group Titles */
 .cert-group-title {
   margin: 50px 0 20px;
