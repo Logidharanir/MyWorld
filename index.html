@@ -44,7 +44,7 @@
           <h1 class="name"><span>Logidharan I</span></h1>
           <h3>and I’m a <span class="typed-text" id="typed-text"></span></h3>
           <p>
-  I’m a final-year BCA student at S.I.V.E.T College, University of Madras, with a strong passion for full-stack development, data analytics, and AI. I’ve successfully completed certifications from IBM in core programming languages including Python, Java, C++, and HTML/CSS at a basic level, building a strong foundation in programming concepts and problem-solving. With hands-on experience through <strong>5 internships</strong> in domains such as MySQL, game development, web technologies, full-stack development, and data analytics, I’ve also built <strong>5+ academic and personal projects</strong> that reflect both creativity and practical skills. Welcome to my digital portfolio — a reflection of my learning, growth, and passion for technology!
+  I’m a final-year BCA student at S.I.V.E.T College, University of Madras, with a strong passion for full-stack development, data analytics, and AI. I’ve successfully completed certifications from IBM in core programming languages including Python, Java, C++, and HTML/CSS at a basic level, building a strong foundation in programming concepts and problem-solving. With hands-on experience through <strong>6 internships</strong> in domains such as MySQL, game development, web technologies, full-stack development, and data analytics, I’ve also built <strong>5+ academic and personal projects</strong> that reflect both creativity and practical skills. Welcome to my digital portfolio — a reflection of my learning, growth, and passion for technology!
 </p>
           
 
@@ -159,25 +159,70 @@ such as Artificial Intelligence and Machine Learning. </p>
 
   <div class="internship-container">
 
-    <!-- UPTOSKILL – Data Analytics -->
+<!-- UPTOSKILL – Data Analytics -->
 <div class="internship-card">
-  <img src="best intern of the month.jpeg" alt="UptoSkill Internship">
+  <img src="uptoskill colle.jpeg" alt="UptoSkill Internship">
 
   <div class="internship-info">
-    <h4>UPTOSKILL – Data Analytics Intern (Team Lead)</h4>
+    <h4>UPTOSKILL – Data Analytics Intern (Team Leader)</h4>
+
     <p>
-      Online – Worked on Google Sheets & Power BI projects involving data mining, data cleaning, and visualization.  
-      Awarded <strong>Intern of the Month</strong> for performance & leadership.
+      Online – Worked on Google Sheets and Power BI projects involving
+      data cleaning, visualization and dashboard creation.
     </p>
 
-    <a href="best intern of the month.jpeg" target="_blank" class="view-btn">
-      View Certificate
-    </a>
+    <button class="view-btn" onclick="openAlbum()">View Certificates</button>
   </div>
 </div>
 
+<!-- UPTOSKILL CERTIFICATE POPUP -->
+<div id="certPopup" class="cert-popup">
 
-    <!-- LEITEN -->
+  <div class="cert-popup-content">
+
+    <span class="close-btn" onclick="closeAlbum()">✕</span>
+
+    <h3>UPTOSKILL – Data Analytics Internship</h3>
+
+    <p class="popup-desc">
+      During this internship at UptoSkills, I worked on real-time data analytics tasks
+      including data cleaning, visualization, and dashboard creation using
+      Google Sheets and Power BI.
+    </p>
+
+    <div class="cert-gallery">
+
+      <!-- Certificate 1 -->
+      <div class="cert-item">
+        <img src="best intern of the month.jpeg">
+        <h4>Intern of the Month</h4>
+        <p>Recognition for outstanding performance and leadership.</p>
+        <a href="best intern of the month.jpeg" target="_blank" class="view-btn">View</a>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="cert-item">
+        <img src="Data Analytics Experience.jpeg">
+        <h4>Experience Certificate</h4>
+        <p>Official certificate confirming my role as Data Analytics Intern (Team Leader).</p>
+        <a href="Data Analytics Experience.jpeg" target="_blank" class="view-btn">View</a>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="cert-item">
+        <img src="Data Analytics Intern.jpeg">
+        <h4>Completion Certificate</h4>
+        <p>Awarded after successfully completing the internship program.</p>
+        <a href="Data Analytics Intern.jpeg" target="_blank" class="view-btn">View</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- LEITEN -->
     <div class="internship-card">
       <img src="leiten.jpg" alt="LEITEN Internship">
       <div class="internship-info">
@@ -464,6 +509,14 @@ document.getElementById('wa-send').addEventListener('click', function () {
 
     window.open(waURL, '_blank');
   });
+
+  function openAlbum() {
+  document.getElementById("certPopup").style.display = "flex";
+}
+
+function closeAlbum() {
+  document.getElementById("certPopup").style.display = "none";
+}
 
     </script>
   </body>
